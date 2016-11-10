@@ -1,4 +1,6 @@
 import React from 'react';
+import Header from './Header';
+import Content from './Content';
 
 class App extends React.Component {
 
@@ -17,12 +19,14 @@ class App extends React.Component {
 
         return (
           <div>
-                <h1>Hello Monkey</h1>
-                <h2>Welocome to Monkey {text}</h2>
-                <button onClick={this.sayHello}>Greetings</button>
-                <p style={pStyle}>{1==1 ? 'true':'false'}</p>
+            <h1>Hello Monkey</h1>
+            <h2>Welocome to Monkey {text}</h2>
+            <button onClick={this.sayHello}>Greetings</button>
+            <p style={pStyle}>{1==1 ? 'true':'false'}</p>
+            <Header/>
+            <Content/>
           </div>
-        );
+      );
     }
 }
 
